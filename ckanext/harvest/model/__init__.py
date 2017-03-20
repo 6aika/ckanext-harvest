@@ -209,7 +209,7 @@ class HarvestObjectError(HarvestDomainObject):
                 pass
             err.save()
         finally:
-            log_message = '{0}, line {1}'.format(message, line) \
+            log_message = u'{0}, line {1}'.format(message, line) \
                           if line else message
             log.debug(log_message)
 
